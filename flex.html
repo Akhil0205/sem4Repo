@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: burlywood;
+            /* padding: 30px; */
+            border: 2px red solid;
+            display: flex;
+            /* height: 500PX; */
+            min-height: 50px;
+            justify-content:center;
+            align-items:flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 40px;
+            
+        }
+        .item
+        {
+            background-color: lightgreen;
+            width: 70px;
+            height: 60px;
+            border: 2px purple solid;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            align-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            flex-grow: 1;
+
+        }
+        #item-1
+        {
+            flex-grow: 5;
+            flex-shrink: 0;
+            /*margin-right: auto; */
+        }
+        @media(max-width:500px) 
+        {
+            .container
+            {
+                flex-wrap: wrap;
+                background-color: grey;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height:150px;
+            display: grid;
+            width: 430px;
+        }
+        .header{
+            color:brown;
+            border: 16px green solid; 
+            display: grid;
+            text-align: center;
+           
+        }
+        .item{
+            display: grid;
+            padding: 15px;
+            grid-column: 2 /span 3;
+            background-color: gold;
+        }
+        #item-2{
+            grid-row:2 / span3 ;
+        }
+
+        .footer{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">Famous Dishes of India</div>
+    <div class="item">
+        <figure>
+            <img src="download (1).jpg"></div>
+            <figcaption>Item 1</figcaption>
+        </figure>
+        
+    <div class="item" id="item-2">
+        <figure>
+            <img src="download (2).jpg"></div>
+            <figcaption>Item 2</figcaption>
+        </figure>
+    <div class="item">
+       <figure>
+        <img src="images (1).jpg"></div>
+        <figcaption>Item 3</figcaption>
+       </figure>
+    <div class="item">
+      <figure>
+        <img src="images.jpg"></div>
+        <figcaption>Item 4</figcaption>
+      </figure>
+    <div class="item">
+        <figure>
+            <img src="download (3).jpg"></div>
+            <figcaption>Item 5</figcaption>
+        </figure>
+    <div class="item">Paragraph description</div>
+    <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
